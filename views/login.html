@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/resetCSS.css">
+</head>
+<body>
+    <h1>Connexion</h1>
+    <form action="authenticate.php" method="post">
+        <fieldset>
+            <div>
+                <label for="username">
+                    <i class="fas fa-user"></i>
+                </label>
+                <input type="text" name="username" placeholder="Username" id="username" required>
+            </div>
+            <div>
+                <label for="password">
+                    <i class="fas fa-lock"></i>
+                </label>
+                <input type="password" name="password" placeholder="Password" id="password" required>
+            </div>
+            <div>
+                <input type="submit" value="Login">
+            </div>
+        </fieldset>
+    </form>
+    
+    <div>
+        <p>Vous êtes nouveau ici ?</p>
+        <button onclick="location.href='register.html'">Créer un compte</button>
+    </div>
+</body>
+</html>
