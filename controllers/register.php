@@ -54,7 +54,7 @@ if (isset($_POST['surname'], $_POST['firstname'], $_POST['email'], $_POST['passw
 
 ?>
 
-// Now we check if the data was submitted, isset() function will check if the data exists.
+<!-- // Now we check if the data was submitted, isset() function will check if the data exists.
 if (!isset($_POST['surname'], $_POST['firstname'], $_POST['email'], $_POST['password'], $_POST['confirm-password'])) {
 	// Could not get the data that should have been sent.
 	exit('Veuillez completer le formulaire d\'inscription !');
@@ -93,4 +93,4 @@ if ($stmt = $con->prepare('SELECT * FROM utilisateur WHERE mailUser = ?')) {
 	// Something is wrong with the SQL statement, so you must check to make sure your accounts table exists with all 3 fields.
 	echo 'Could not prepare statement!';
 }
-$con->close();
+$con->close(); -->
